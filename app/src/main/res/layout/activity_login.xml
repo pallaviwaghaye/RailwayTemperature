@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white">
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Welcome"
+                    android:textAllCaps="false"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="60dp"
+                    android:gravity="center"
+                    android:textSize="20dp"
+                    android:textColor="@color/dark_blue"
+                    android:fontFamily="@font/poppins_regular"/>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+
+
+                    <EditText
+                        android:id="@+id/editTextMobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/edittext_rectangular_oval"
+                        android:hint="Mobile number"
+                        android:drawableLeft="@drawable/email"
+                        android:drawablePadding="10dp"
+                        android:paddingLeft="10dp"
+                        android:fontFamily="@font/poppins_light"
+                        android:layout_marginTop="10dp"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:imeOptions="actionNext"
+                        android:textColor="@color/dark_blue"
+                        android:textColorHint="@color/dark_gray"
+                        android:textSize="15sp" />
+
+
+
+                    <EditText
+                        android:id="@+id/editTextPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/edittext_rectangular_oval"
+                        android:hint="Password"
+                        android:drawableLeft="@drawable/lock"
+                        android:drawablePadding="10dp"
+                        android:paddingLeft="10dp"
+                        android:layout_marginTop="30dp"
+                        android:inputType="textPassword"
+                        android:imeOptions="actionDone"
+                        android:textColor="@color/dark_blue"
+                        android:textColorHint="@color/dark_gray"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/poppins_light"/>
+
+
+
+                    <Button
+                        android:id="@+id/buttonLogin"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/button_css"
+                        android:text="Login"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="17dp"
+                        android:fontFamily="@font/poppins_medium"/>
+
+                <TextView
+                    android:id="@+id/gotoForgotPassword"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Forgot Password?"
+                    android:textAllCaps="false"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:textSize="16dp"
+                    android:textColor="@color/dark_blue"
+                    android:fontFamily="@font/poppins_regular"
+                    android:visibility="gone"/>
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="100dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Not Yet Register?"
+                android:textAllCaps="false"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:textColor="@color/dark_gray"
+                android:fontFamily="@font/poppins_light"/>
+            <TextView
+                android:id="@+id/gotoRegistration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Sign Up now"
+                android:textAllCaps="false"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:textColor="@color/dark_blue"
+                android:fontFamily="@font/poppins_regular"/>
+        </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>
+
+

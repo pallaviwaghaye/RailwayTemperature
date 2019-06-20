@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linearLayoutMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray3"
+    >
+    <com.webakruti.railwaytemperature.utils.CustomSwipeToRefresh
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/swipeContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                android:id="@+id/textViewMsg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="All Devices"
+                android:textAllCaps="true"
+                android:textColor="@color/gray4"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:visibility="gone"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+
+                >
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/textViewNoData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="No Data Found"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </com.webakruti.railwaytemperature.utils.CustomSwipeToRefresh>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_plus"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="18dp"
+        android:src="@drawable/ic_white_plus"
+        android:elevation="6dp"
+        />
+
+</android.support.design.widget.CoordinatorLayout>
